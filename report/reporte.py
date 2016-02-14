@@ -11,7 +11,7 @@ class ParticularReport(models.AbstractModel):
         products = self.env['product.product'].search([]).sorted(key=lambda r: r.name)
         for product in products:
             if product.stock_minimo and product.qty_available != 0:
-                print "METELE"
+                print "No se ha establecido stock minimo"
                 if product.stock_minimo >= product.qty_available:
                     stock.append(product.id)
         #pdb.set_trace() 
