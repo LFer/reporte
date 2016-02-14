@@ -4,7 +4,7 @@
 
     <report
         id="reporte_stock"
-        string="Imprimir Reporte de Stock"
+        string="Reporte de Stock"
         model="product.product"
         report_type="qweb-pdf"
         file="reporte.reporte"
